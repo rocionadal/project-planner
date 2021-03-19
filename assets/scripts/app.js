@@ -12,9 +12,36 @@ class DOMHelper {
   }
 }
 
-class ToolTip {
+class Component {
+  constructor(hostElementId, insertBefore = false) {
+    if (hostElementId) {
+      this.hostElementId = document.getElementById(hostElementId);
+    } else {
+      this.hostElementId = document.body;
+    }
+    this.insertBefore = insertBefore;
+  }
+
+  detach() {
+    if (this.element) {
+      this.element.remove();
+    }
+    // this.element.parentElement.removeChild(this.element); // for older browser support
+  }
+
+  attach() {
+    this.hostElementId.insertAdjacentElement(
+      this.insertBefore ? 'afterbegin' : 'beforeend',
+      this.element
+    );
+  }
+}
+
+class ToolTip extends Component {
   constructor(closeNotifierFunction) {
+    super(); // if we want to attach the element afterbegin we need to pass an argument, default = at the end
     this.closeNotifier = closeNotifierFunction;
+    this.create();
   }
 
   closeTooltip = () => {
@@ -22,18 +49,12 @@ class ToolTip {
      this.closeNotifier();
   }
 
-  detach() {
-    this.element.remove();
-    // this.element.parentElement.removeChild(this.element); // for older browser support
-  }
-
-  attach() {
+  create() {
     const tooltipElement = document.createElement('div');
     tooltipElement.className = 'card';
     tooltipElement.textContent = 'Hello World';
     tooltipElement.addEventListener('click', this.closeTooltip);
     this.element = tooltipElement;
-    document.body.append(tooltipElement);
   }
 }
 
