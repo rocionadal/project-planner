@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f29f52;
+  background: #276678;
 }
 
 #main-header h1 {
@@ -61,16 +61,16 @@ section > h2 {
 
 button {
   font: inherit;
-  background: #f29f52;
+  background: #94b5c0;
   color: white;
-  border: 1px solid #f29f52;
+  border: 1px solid #94b5c0;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
 
 button.alt {
   background: white;
-  color: #f29f52;
+  color: #94b5c0;
 }
 
 button:focus {
@@ -79,8 +79,8 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #f9c390;
-  border-color: #f9c390;
+  background: #d3e0ea;
+  border-color: #d3e0ea;
   color: white;
 }
 
@@ -92,11 +92,11 @@ button:active {
 }
 
 #active-projects {
-  border: 1px solid #1587a7;
+  border: 1px solid #1687a7;
 }
 
 #active-projects > header {
-  background: #1587a7;
+  background: #1687a7;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -109,11 +109,11 @@ button:active {
 }
 
 #finished-projects {
-  border: 1px solid #d3e0ea;
+  border: 1px solid #1687a7;
 }
 
 #finished-projects > header {
-  background: #d3e0ea;
+  background: #1687a7;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
