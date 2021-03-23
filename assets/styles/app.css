@@ -97,6 +97,7 @@ button:active {
 
 #active-projects {
   border: 1px solid #1687a7;
+  border-radius: 4px;
 }
 
 #active-projects > header {
@@ -114,6 +115,7 @@ button:active {
 
 #finished-projects {
   border: 1px solid #1687a7;
+  border-radius: 4px;
 }
 
 #finished-projects > header {
