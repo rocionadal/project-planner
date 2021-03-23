@@ -176,7 +176,7 @@ class ProjectList {
         .getElementById(prjId)
         .querySelector('button:last-of-type')
         .click();
-      list.parentElement.classList.remove('droppable');
+      list.parentElement.classList.remove('droppable')
     });
   }
 
