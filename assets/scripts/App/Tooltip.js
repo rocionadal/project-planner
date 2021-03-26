@@ -1,4 +1,6 @@
-class ToolTip extends Component {
+import { Component } from './Component.js';
+
+export class Tooltip extends Component {
   constructor(closeNotifierFunction, text, hostElementId) {
     super(hostElementId); // if we want to attach the element afterbegin we need to pass an argument, default = at the end
     this.closeNotifier = closeNotifierFunction;

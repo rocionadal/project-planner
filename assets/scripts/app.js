@@ -1,3 +1,5 @@
+import { ProjectList } from './App/ProjectList.js';
+
 class App {
   static init() { // en ves de llamarlo sobre una instancia lo llamamos directamente sobre la clase
     const activeProjectList = new ProjectList('active');
