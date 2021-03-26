@@ -1,0 +1,22 @@
+{
+  "name": "project-planner",
+  "version": "1.0.0",
+  "description": "Javascript - Project Planner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocionadal/project-planner.git"
+  },
+  "author": "Rocio Nadal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocionadal/project-planner/issues"
+  },
+  "homepage": "https://github.com/rocionadal/project-planner#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0"
+  }
+}
