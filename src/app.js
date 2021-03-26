@@ -1,3 +1,4 @@
+import * as _ from 'lodash';
 import { ProjectList } from './App/ProjectList';
 
 class App {
