@@ -10,5 +10,6 @@ module.exports = {
   },
   devServer: {
     contentBase: './'
-  }
+  },
+  devtool: 'cheap-module-eval-source-map'
 };
